@@ -14,7 +14,7 @@
  * limitations under the License.
  *
  */
-
+console.log('open cache-polyfill.js')
 if (!Cache.prototype.addAll) {
   Cache.prototype.addAll = function addAll(requests) {
     var cache = this;
