@@ -28,6 +28,7 @@ if (!Cache.prototype.addAll) {
     NetworkError.prototype = Object.create(Error.prototype);
 
     return Promise.resolve().then(function() {
+      console.log(arguments)
       if (arguments.length < 1) throw new TypeError();
 
       // Simulate sequence<(Request or USVString)> binding:
